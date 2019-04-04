@@ -1,0 +1,20 @@
+
+
+.student_img_show img{
+  border: 2px solid red;
+  padding: 10px;
+  background-color: white;
+  max-width: 100%;
+  overflow: hidden;
+  height: 150px;
+}
+.border_bottom{
+  margin-bottom: 7px;
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+}
+
+label {
+  color: #0b2290;
+  font-weight: 600;
+}

@@ -1,0 +1,456 @@
+/*search box css start here*/
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: -214px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
+
+.collage_profile_details{
+    padding: 10px 0;
+}
+.about_collage_profile{
+    background-color: #f5f8f9;
+    padding: 20px 0;
+}
+.collage_about_left{
+    padding: 10px;
+    background-color: #ffffff;
+}
+.collage_about_left_border{
+    border-bottom: 1px solid #ddd;
+}
+h1.collage_about_right_apply{
+    background-color: #ff7900;
+    padding: 10px;
+}
+h1.collage_about_right_download{
+    background-color: #ffffff;
+    padding: 10px;
+}
+a.collage_about_right_apply{
+    color: #ffffff;
+    padding-left: 90px;
+}
+a.collage_about_right_download{
+    color: #ff7900;
+    padding-left: 40px;
+}
+h3.collae_highlights{
+    padding: 10px 0;
+}
+.collage_about_right_list{
+    margin-top: 10px;
+
+    background-color: #ffffff;
+}
+.collage_about_right_list_content{
+    border-bottom: solid 2px #dddddd;
+    padding: 10px 0;
+}
+.collage_about_right_list_h2{
+    font-size: 14px;
+    background-color: #dddddd;
+    padding: 10px;
+}
+.collage_about_right_list img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.collage_about_right_list p{
+    font-size: 12px;
+    font-weight: bold;
+}
+span.collage_about_right_list{
+    font-size: 10px;
+    color: #9e9e9e;
+}
+/*gallery */
+
+/*gallery end*/
+
+/*Top Feature Collage*/
+.twPc-div {
+    margin-bottom: 10px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    height: 186px;
+    max-width: 340px; // orginal twitter width: 290px;
+}
+.twPc-bg {
+    background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+    background-position: 0 50%;
+    background-size: 100% auto;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 4px 4px 0 0;
+    height: 105px;
+    width: 100%;
+}
+.twPc-block {
+    display: block !important;
+}
+.twPc-button {
+    margin: -35px -10px 0;
+    text-align: right;
+    width: 100%;
+}
+.twPc-avatarLink {
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-block !important;
+    float: left;
+    margin: -30px 5px 0 8px;
+    max-width: 100%;
+    padding: 1px;
+    vertical-align: bottom;
+}
+.twPc-avatarImg {
+    border: 2px solid #d43b00;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 72px;
+    width: 72px;
+}
+.twPc-divUser {
+    margin: 5px 0 0;
+}
+.twPc-divUser span{
+    padding-right: 10px;
+    float: right;
+}
+.top_feature_collage_view p {
+    padding: 4px;
+    color: #FF9800;
+    font-size: 20px;
+    font-weight: bold;
+}
+.twPc-divName {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.twPc-divName a {
+    color: inherit !important;
+}
+.twPc-divStats {
+    margin-left: 11px;
+    padding: 10px 0;
+}
+.twPc-Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+}
+ul.twPc-Arrange {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.twPc-ArrangeSizeFit {
+    display: table-cell;
+    padding: 0;
+    vertical-align: top;
+}
+.twPc-ArrangeSizeFit a:hover {
+    text-decoration: none;
+}
+.twPc-StatValue {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out 0s;
+}
+.twPc-StatLabel {
+    color: #8899a6;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out 0s;
+}
+/*Top Feature Collage end */
+
+.top_feature_collage_title{
+    padding: 40px 0;
+    text-align: center;
+}
+ul.nav.nav-tabs {
+    margin-left: 416px;
+}
+.collage_consultancy_eaxam{
+    background-color: #F5F5F5;
+    padding: 40px 0;
+}
+.collage-icon {
+    text-align: center;
+}
+.collage-content {
+    text-align: center;
+}
+.collage_category {
+    padding: 20px 8px;
+}
+.collage-content h4 {
+    color: #2196F3;
+}
+.collage-content p {
+    color: #009688;
+}
+.collage_category:hover {
+    border-radius: 10px;
+    background: #fff;
+}
+.latest_news{
+    padding: 30px 0;
+}
+.top_feature_collage {
+    background: #ECEFF1;
+}
+.cllage_pfofile_image{
+    width: 100%;
+}
+@media(max-width:768px){
+    ul.nav.nav-tabs {
+         margin-left: 1px!important;
+    }
+    .nav-tabs > li > a{
+        padding: 6px 11px;
+        display: block;
+        background: #fff;
+        color: #ff7900;
+        font-size: 10px;
+        /* border-radius: 30px; */
+        text-transform: uppercase;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+        background: #ff7900!important;
+        color: #fff!important;
+        transition: .3s all ease-in;
+    }
+    .collage_category {
+        padding: 2px 0;
+        border-right: solid 1px #ddd;
+    }
+    .collage-content {
+        border-bottom: solid 1px #3F51B5;
+        border-right: solid 1px #03A9F4;
+    }
+    .collage-content h4 {
+        font-size: 10px;
+    }
+    .collage-content p {
+        font-size: 10px;
+    }
+    .top_feature_collage_title h1 {
+    font-size: 17px;
+    color: #009688;
+}
+}
+.pn-ProductNav_Wrapper {
+    position: relative;
+    padding: 0 11px;
+}
+
+.pn-ProductNav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* If JS present, let's hide the default scrollbar */
+    /* positioning context for advancers */
+    position: relative;
+}
+.js .pn-ProductNav {
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* Remove the default scrollbar for WebKit implementations */
+}
+.js .pn-ProductNav::-webkit-scrollbar {
+    display: none;
+}
+
+.pn-ProductNav_Contents {
+    float: left;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.pn-ProductNav_Contents-no-transition {
+    transition: none;
+}
+
+.pn-ProductNav_Link {
+    text-decoration: none;
+    color: #888;
+    font-size: 1.2em;
+    font-family: -apple-system, sans-serif;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+.pn-ProductNav_Link + .pn-ProductNav_Link {
+    margin-left: 11px;
+    padding-left: 11px;
+    border-left: 1px solid #eee;
+}
+.pn-ProductNav_Link[aria-selected="true"] {
+    color: #111;
+}
+
+.pn-Advancer {
+    /* Reset the button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    /* Now style it as needed */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* Set the buttons invisible by default */
+    opacity: 0;
+    transition: opacity .3s;
+}
+.pn-Advancer:focus {
+    outline: 0;
+}
+.pn-Advancer:hover {
+    cursor: pointer;
+}
+
+.pn-Advancer_Left {
+    left: 0;
+}
+[data-overflowing="both"] ~ .pn-Advancer_Left, [data-overflowing="left"] ~ .pn-Advancer_Left {
+    opacity: 1;
+}
+
+.pn-Advancer_Right {
+    right: 0;
+}
+[data-overflowing="both"] ~ .pn-Advancer_Right, [data-overflowing="right"] ~ .pn-Advancer_Right {
+    opacity: 1;
+}
+
+.pn-Advancer_Icon {
+    width: 20px;
+    height: 44px;
+    fill: #bbb;
+}
+
+.pn-ProductNav_Indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100px;
+    background-color: #f90;
+}
+
+/*Login*/
+.login-container{
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10px;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+.why_list_s{
+    padding: 20px;
+    color: #ffff;
+}
+.why_list_s li{
+    font-weight: bold;
+    padding-left: 40px;
+}
+/*Login*/
