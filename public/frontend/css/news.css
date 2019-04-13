@@ -1,0 +1,124 @@
+
+
+/*body{*/
+    /*background:#ddd;*/
+/*}*/
+
+/*.news-holder {*/
+    /*max-width: 700px;*/
+    /*height:300px;*/
+    /*margin: 0 auto;*/
+    /*font-family: "Segoe UI","Trebuchet MS", Arial, sans-serif;*/
+    /*font-size: 13px;*/
+    /*background:white;*/
+/*}*/
+
+.news-holder * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.news-headlines {
+    list-style: none;
+    position: relative;
+}
+
+.news-headlines li {
+    padding: 7px;
+    position: relative;
+    z-index: 20;
+    color: #dddddd;
+    width:100%;
+    background:#888888;
+    min-height:60px;
+    font-size:14px;
+}
+.nh-anim {
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.news-headlines li:hover, a:hover {
+    cursor: pointer;
+    background:#333333;
+    color:white;
+}
+li.selected{
+    background:#333333;
+}
+.news-headlines .highlight {
+    width: 100%;
+    background: #888888;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.news-headlines {
+    float: left;
+    width: 30%;
+}
+.news-preview {
+    float: left;
+    width: 70%;
+    position: relative;
+    z-index: 5;
+    position: relative;
+}
+
+.news-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height:275px;
+    margin: 0 auto 5px auto;
+}
+
+.news-content {
+    position: absolute;
+    background: #333333;
+    z-index: 10;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right:0;
+    display: none;
+}
+.resume{
+    position:absolute;
+    bottom:15px;
+    left:10px;
+    right:10px;
+    background:rgba(0,0,0,0.8);
+    padding:10px;
+    color:#bbb;
+}
+a.title {
+    display:block;
+    color:#dddddd;
+    margin:0 0 12px 0;
+    font-size:18px;
+}
+a.title:hover{
+    background:none;
+    text-decoration:underline;
+}
+.top-content {
+    display: block;
+}
+.News_details {
+    padding: 50px 0;
+}

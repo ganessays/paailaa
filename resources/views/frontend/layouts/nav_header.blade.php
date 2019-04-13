@@ -120,7 +120,7 @@
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Download</a></li>
                             <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="{{url('contact-us')}}">Contact</a></li>
                             <li><a href="{{url('login')}}" class="@if(request()->segment('1') =='login') active @endif">Login</a></li>
                         </ul>
                         <!-- End Navigation List -->

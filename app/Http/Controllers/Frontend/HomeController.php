@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     public function index(){
-    	$title = 'Home | Paailaa';
+    	$title = 'Best Educational ';
         return view('frontend.index',compact('title'));
     }
 

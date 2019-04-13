@@ -7,7 +7,7 @@
                 <div class="col-md-3 col-xs-12">
                     <div class="footer_link">
                         <h4>Top Collages</h4>
-                        <li><a href="#">M.B.A</a> </li>
+                        <li><a href="{{url('news')}}">News</a> </li>
                         <li> <a href="#"> B.TECH/B.E</a></li>
                         <li> <a href="#">MCA</a></li>
                         <li> <a href="#">BCA</a></li>

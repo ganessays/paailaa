@@ -98,6 +98,17 @@ span.collage_about_right_list{
     font-size: 10px;
     color: #9e9e9e;
 }
+/*Collage Listing*/
+.list_of_collage {
+    line-height: 25px;
+    margin-bottom: 10px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    height: 219px;
+    max-width: 100%;
+}
+
 /*gallery */
 
 /*gallery end*/
@@ -149,10 +160,7 @@ span.collage_about_right_list{
 .twPc-divUser {
     margin: 5px 0 0;
 }
-.twPc-divUser span{
-    padding-right: 10px;
-    float: right;
-}
+
 .top_feature_collage_view p {
     padding: 4px;
     color: #FF9800;

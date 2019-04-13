@@ -111,8 +111,8 @@
                     </div>
                 </div>
             </form>
+        </section>
     </div>
-    </section>
     <!-- Search  -->
 
     <!-- Start Services Section -->
@@ -235,6 +235,7 @@
             <div class="tab-content" id="tabs">
                 <div class="tab-pane active" id="Collage">
                     <div class="row">
+                        <a href="{{url('list-collage')}}">
                         <div class="col-md-3 col-xs-4 col-sm-6">
                             <div class="collage_category">
                                 <div class="collage-icon">
@@ -246,6 +247,8 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
+
                         <div class="col-md-3 col-xs-4 col-sm-6">
                             <div class="collage_category">
                                 <div class="collage-icon">
@@ -419,8 +422,8 @@
                                     <i class="fa fa-home icon-large"></i>
                                 </div>
                                 <div class="collage-content">
-                                    <h4>MANAGEMENT</h4>
-                                    <p>555 Collage</p>
+                                    <h4>Study in Australia </h4>
+                                    <p>553 Consultancy</p>
                                 </div>
                             </div>
                         </div>
@@ -430,8 +433,19 @@
                                     <i class="fa fa-home icon-large"></i>
                                 </div>
                                 <div class="collage-content">
-                                    <h4>MANAGEMENT</h4>
-                                    <p>555 Collage</p>
+                                    <h4>Study In USA</h4>
+                                    <p>321 Consultancy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-4 col-sm-6">
+                            <div class="collage_category">
+                                <div class="collage-icon">
+                                    <i class="fa fa-home icon-large"></i>
+                                </div>
+                                <div class="collage-content">
+                                    <h4>Study In Japan</h4>
+                                    <p>555 Consultancy</p>
                                 </div>
                             </div>
                         </div>
@@ -440,41 +454,39 @@
                 <div class="tab-pane" id="Non_ecan">
                     <div class="events_listt">
                         <div class="row">
-                            <div class="col-md-4">
-                                <!-- code start -->
-                                <div class="twPc-divStats">
-                                    <div class="events_details">
-                                        <h2 class="event_title">FILL OUT ONLINE APPLICATION</h2>
-                                        <p>
-                                            Complete our easy online application pay with credit card or PayPal
-                                        </p>
+                            <h2>Non E-can Consultancy</h2>
+                            <div class="col-md-3 col-xs-4 col-sm-6">
+                                <div class="collage_category">
+                                    <div class="collage-icon">
+                                        <i class="fa fa-home icon-large"></i>
+                                    </div>
+                                    <div class="collage-content">
+                                        <h4>Study in Australia </h4>
+                                        <p>553 Consultancy</p>
                                     </div>
                                 </div>
-                                <!-- code end -->
                             </div>
-                            <div class="col-md-4">
-                                <!-- code start -->
-                                <div class="twPc-divStats">
-                                    <div class="events_details">
-                                        <h2 class="event_title">RECEIVE VISA ON ARRIVAL CONFIRMATION VIA EMAIL</h2>
-                                        <p>
-                                            Complete our easy online application pay with credit card or PayPal
-                                        </p>
+                            <div class="col-md-3 col-xs-4 col-sm-6">
+                                <div class="collage_category">
+                                    <div class="collage-icon">
+                                        <i class="fa fa-home icon-large"></i>
+                                    </div>
+                                    <div class="collage-content">
+                                        <h4>Study In USA</h4>
+                                        <p>321 Consultancy</p>
                                     </div>
                                 </div>
-                                <!-- code end -->
                             </div>
-                            <div class="col-md-4">
-                                <!-- code start -->
-                                <div class="twPc-divStats">
-                                    <div class="events_details">
-                                        <h2 class="event_title">ENTER DESTINATION</h2>
-                                        <p>
-                                            Complete our easy online application pay with credit card or PayPal
-                                        </p>
+                            <div class="col-md-3 col-xs-4 col-sm-6">
+                                <div class="collage_category">
+                                    <div class="collage-icon">
+                                        <i class="fa fa-home icon-large"></i>
+                                    </div>
+                                    <div class="collage-content">
+                                        <h4>Study In Japan</h4>
+                                        <p>555 Consultancy</p>
                                     </div>
                                 </div>
-                                <!-- code end -->
                             </div>
                         </div>
                     </div>
@@ -925,7 +937,7 @@ and education industry players who are seeking information</p>
                 </div>
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -934,25 +946,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="{{url('collage-profile')}}">Global College of Management</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -961,25 +973,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Global College of Management </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Mid Baneshwor, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -988,25 +1000,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Kathmandu, Nepal </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1015,25 +1027,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1042,25 +1054,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1069,25 +1081,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Global College of Management </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Mid Baneshwor, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1096,25 +1108,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Kathmandu, Nepal </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1123,21 +1135,22 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
+
             </div>
         </div>
     </div>
@@ -1154,7 +1167,7 @@ and education industry players who are seeking information</p>
                 </div>
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1163,25 +1176,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">The Next Education Consultancy</a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Dillibazar, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1190,25 +1203,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">KIEC </a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Dillibazar, Kathmandu, Nepal</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1217,25 +1230,25 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Kathmandu, Nepal </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->
 
                 <div class="col-md-3">
                     <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
+                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
                         <div class="twPc-button">
                             <div class="top_feature_collage_view">
                                 <p>
@@ -1244,126 +1257,18 @@ and education industry players who are seeking information</p>
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
+                            <div class="collage_name">
+                                <h2> <a href="{{url('collage-profile')}}">Bradford Education Consultancy</a></h2>
                             </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
+                            <div class="front_list_collage_lo">
+                                <a href="#">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>New Baneshwor, Kathmandu, Nepal</span>
+                                </a>
                             </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
-                            </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
-                            </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
-                            </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="twPc-divName">
-                                <a href="#">Karthford International College</a>
-                            </div>
-                            <span>
-                <a href="#">
-                  <i class="fa fa-map-marker"></i>
-                     <span>Kathmandu, Nepal</span>
-                </a>
-              </span>
                         </div>
                     </div>
                 </div><!-- col md 3 end  -->

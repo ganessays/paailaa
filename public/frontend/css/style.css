@@ -5630,17 +5630,17 @@ ul.footer-nav li a:hover {
 
 .parallax{
 	width: 100%;
-  background-position: 50% 0px; 
+  background-position: 50% 0;
   background-attachment: absolute; 
 }
 
 .parallax-text-container-1 .parallax-text-item {
-  padding:120px 0px;
+  padding:120px 0;
   text-align:center;
 }
 
 .parallax-mobile {
-	background-position: 50% 0px;
+	background-position: 50% 0;
 	background-attachment: scroll !important;
 }
 
@@ -5769,3 +5769,95 @@ ul.footer-nav li a:hover {
   top: 0;
   left: 0;
 }
+
+/*list collage */
+.list_collage_add h2{
+	padding: 10px 0;
+}
+.list_collage_add img{
+	padding: 10px 0;
+}
+.list_apply_brochure a{
+	padding: 7px 30px;
+}
+.front_list_collage_lo a {
+	padding-left: 10px;
+}
+h2.Apply_now_l_c {
+	padding: 2px 0;
+	background: #fe6927;
+	font-size: 13px;
+	font-weight: bold;
+}
+h2.Apply_now_l_c a {
+	color: #fff;
+}
+.collage_name h2 {
+	padding-top: 4px;
+	font-size: 14px;
+	line-height: 1;
+}
+.collage_name a {
+	padding: 0!important;
+}
+.list_admission_course {
+	border-top: 2px solid #a7a4a4;
+}
+a.Apply_now_l_b {
+	border-radius: 50%;
+	border-left: 10px solid #FFF;
+	border-right: 10px solid #FFF;
+}
+.list_admission_course a {
+	padding: 5px 9px;
+}
+.collage_ne_ar_list{
+	margin-bottom: 20px;
+}
+.collage_info_page{
+    padding:10px;
+    background-color: #fff;
+}
+.courses_fee_profile a{
+	padding: 2px 10px;
+}
+.courses_fee_profile{
+	background-color: #fff;
+	padding: 10px;
+}
+.collage_faculty_page{
+	border-bottom: #ddd;
+	background-color: #fff;
+	padding: 10px;
+}
+.teacher_name{
+	border-right: 2px solid #ddd;
+}
+.others_faculty{
+	padding: 10px;
+	border-bottom: 2px solid #ddd;
+}
+.collage_faculty_page h3 {
+	color: #ff7900;
+}
+.teacher_name h4 {
+	color: #037477;
+}
+.collage_news_article_list{
+	border-bottom: #ddd;
+	background-color: #fff;
+	padding: 10px;
+}
+.collage_ne_ar_list{
+	border: 1px solid #ddd;
+}
+.collage_ne_ar_list span,p {
+	padding: 5px;
+}
+.front_list_collage_lo span {
+    color: #ff7902;
+}
+.front_list_collage_lo {
+    margin-top: 22px;
+}
+/*list collage end*/

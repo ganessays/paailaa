@@ -9,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0">
-    <meta name="description" content="Medical Visa Services">
-    <meta property="og:url" content="http://medicalvisaservices.airambulancenepal.com/" />
+    <meta name="description" content="Paailaa Education">
+    <meta property="og:url" content="https://Paaiaa" />
 
-    <meta property="og:title" content='Medical Visa Services' />
+    <meta property="og:title" content='Paailaa Education' />
     <meta property="og:description" content='' />
     <meta property="og:type" content="article" />
     <meta property="og:image" content=""/>
