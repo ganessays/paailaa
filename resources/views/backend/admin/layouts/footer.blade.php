@@ -1,125 +1,215 @@
 @section('footer')
 
 
-    <!-- Footer -->
-    <footer id="page-footer" class="bg-body-light">
-        <div class="content py-3">
-            <div class="row font-size-sm">
-                <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
-                    Design & Develop by <a class="font-w600" href="https://www.geniusservice.com.np" target="_blank">Genius Service Nepal Pvt. Ltd.</a>
-                </div>
-                <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
-                    <a class="font-w600" href="{{url('')}}" target="_blank"><span style="color:#00A8FF; font-weight: bolder;">Chubi Project</span> <span style="background-color: #00A8FF; color:#fff; padding:5px; border-radius: 50%;">Management System</span></a> &copy; <span data-toggle="year-copy">{{date('Y')}}</span>
-                </div>
-            </div>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+            Anything you want
         </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
     </footer>
-    <!-- END Footer -->
 
-    <!-- Apps Modal -->
-    <!-- Opens from the modal toggle button in the header -->
-    <div class="modal fade" id="one-modal-apps" tabindex="-1" role="dialog" aria-labelledby="one-modal-apps" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-top modal-sm" role="document">
-            <div class="modal-content">
-                <div class="block block-themed block-transparent mb-0">
-                    <div class="block-header bg-primary-dark">
-                        <h3 class="block-title">Apps</h3>
-                        <div class="block-options">
-                            <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
-                                <i class="si si-close"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="block-content block-content-full">
-                        <div class="row gutters-tiny">
-                            <div class="col-6">
-                                <!-- CRM -->
-                                <a class="block block-rounded block-themed bg-default" href="javascript:void(0)">
-                                    <div class="block-content text-center">
-                                        <i class="si si-speedometer fa-2x text-white-75"></i>
-                                        <p class="font-w600 font-size-sm text-white mt-2 mb-3">
-                                            CRM
-                                        </p>
-                                    </div>
-                                </a>
-                                <!-- END CRM -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane active" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:;">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                                <p>Will be 23 on April 24th</p>
                             </div>
-                            <div class="col-6">
-                                <!-- Products -->
-                                <a class="block block-rounded block-themed bg-danger" href="javascript:void(0)">
-                                    <div class="block-content text-center">
-                                        <i class="si si-rocket fa-2x text-white-75"></i>
-                                        <p class="font-w600 font-size-sm text-white mt-2 mb-3">
-                                            Products
-                                        </p>
-                                    </div>
-                                </a>
-                                <!-- END Products -->
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript:;">
+                            <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="pull-right-container">
+                    <span class="label label-danger pull-right">70%</span>
+                  </span>
+                            </h4>
+
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
                             </div>
-                            <div class="col-6">
-                                <!-- Sales -->
-                                <a class="block block-rounded block-themed bg-success mb-0" href="javascript:void(0)">
-                                    <div class="block-content text-center">
-                                        <i class="si si-plane fa-2x text-white-75"></i>
-                                        <p class="font-w600 font-size-sm text-white mt-2 mb-3">
-                                            Sales
-                                        </p>
-                                    </div>
-                                </a>
-                                <!-- END Sales -->
-                            </div>
-                            <div class="col-6">
-                                <!-- Payments -->
-                                <a class="block block-rounded block-themed bg-warning mb-0" href="javascript:void(0)">
-                                    <div class="block-content text-center">
-                                        <i class="si si-wallet fa-2x text-white-75"></i>
-                                        <p class="font-w600 font-size-sm text-white mt-2 mb-3">
-                                            Payments
-                                        </p>
-                                    </div>
-                                </a>
-                                <!-- END Payments -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+
             </div>
+            <!-- /.tab-pane -->
+            <!-- Stats tab content -->
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+            <!-- /.tab-pane -->
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">General Settings</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+
+                        <p>
+                            Some information about this general settings option
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+                </form>
+            </div>
+            <!-- /.tab-pane -->
         </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+    immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
     </div>
-    <!-- END Apps Modal -->
-    </div>
-    <!-- END Page Container -->
+    <!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+    <!-- DataTables -->
+
+    <!-- jQuery 3 -->
+    <script src="{{url('public/server')}}/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{url('public/server')}}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="{{url('public/server')}}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+    <!-- Bootstrap 3.3.7 -->
+    <script src="{{url('public/server')}}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{url('public/server')}}/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!-- InputMask -->
+    <script src="{{url('public/server')}}/plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="{{url('public/server')}}/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="{{url('public/server')}}/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+    <!-- date-range-picker -->
+    <script src="{{url('public/server')}}/bower_components/moment/min/moment.min.js"></script>
+    <script src="{{url('public/server')}}/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="{{url('public/server')}}/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+    <!-- bootstrap datepicker -->
+    <script src="{{url('public/server')}}/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="{{url('public/server')}}/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <!-- bootstrap time picker -->
+
+    <!-- SlimScroll -->
+    <script src="{{url('public/server')}}/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="{{url('public/server')}}/bower_components/fastclick/lib/fastclick.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="{{url('public/server')}}/dist/js/adminlte.min.js"></script>
+
+    <script src="{{url('public/server')}}/dist/js/demo.js"></script>
+    <script src="{{url('public/server')}}/bower_components/ckeditor/ckeditor.js"></script>
+
+    @yield('script')
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date range picker
+            $('#reservation').daterangepicker()
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges   : {
+                        'Today'       : [moment(), moment()],
+                        'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate  : moment()
+                },
+                function (start, end) {
+                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            )
+
+            //Date picker
+            $('.datepicker').datepicker({
+                autoclose: true
+            })
+
+            //iCheck for checkbox and radio inputs
+            $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                checkboxClass: 'icheckbox_minimal-blue',
+                radioClass   : 'iradio_minimal-blue'
+            })
+            //Red color scheme for iCheck
+            $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                checkboxClass: 'icheckbox_minimal-red',
+                radioClass   : 'iradio_minimal-red'
+            })
+            //Flat red color scheme for iCheck
+            $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                checkboxClass: 'icheckbox_flat-green',
+                radioClass   : 'iradio_flat-green'
+            })
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            //Timepicker
+            $('.timepicker').timepicker({
+                showInputs: false
+            })
+        })
+    </script>
+    <script>
+        $(function () {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor1')
+            //bootstrap WYSIHTML5 - text editor
+            $('.textarea').wysihtml5()
+        })
+    </script>
 
 
-
-    <!-- Page JS Plugins -->
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/buttons/buttons.print.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
-
-    <!-- Page JS Code -->
-    <script src="{{asset('public/backend')}}/assets/js/pages/be_tables_datatables.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/oneui.core.min.js"></script>
-
-    <script src="{{asset('public/backend')}}/assets/js/oneui.app.min.js"></script>
-    <!-- Page JS Plugins -->
-    <script src="{{asset('public/backend')}}/assets/js/plugins/summernote/summernote-bs4.min.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/ckeditor/ckeditor.js"></script>
-    <script src="{{asset('public/backend')}}/assets/js/plugins/simplemde/simplemde.min.js"></script>
-    <!-- Page JS Plugins -->
-    <script src="{{asset('public/backend')}}/assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
-
-    <script src="{{asset('public/backend')}}/assets/js/view_photo.js"></script>
-
-    <!-- Page JS Code -->
-    <script src="{{asset('public/backend')}}/assets/js/pages/be_pages_dashboard.min.js"></script>
-    <script>jQuery(function(){ One.helpers(['summernote', 'ckeditor', 'simplemde']); });</script>
-
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. -->
     </body>
-</html>
+    </html>
 
-@endsection
+    @endsection

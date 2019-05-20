@@ -13,46 +13,16 @@
                        <section id="gallery">
                                <div id="image-gallery">
                                    <div class="row">
+                                       @foreach($gallery as $c_gallery)
                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                                            <div class="img-wrapper">
-                                               <a href="{{asset('public/frontend/images/clientsLogo/3.jpg')}}"><img src="{{asset('public/frontend/images/clientsLogo/3.jpg')}}" class="img-responsive"></a>
+                                               <a href="{{asset('public/uploads/gallery/').'/'.$c_gallery->image}}"><img src="{{asset('public/uploads/gallery/').'/'.$c_gallery->image}}" class="img-responsive"></a>
                                                <div class="img-overlay">
                                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                                </div>
                                            </div>
                                        </div>
-                                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                           <div class="img-wrapper">
-                                               <a href="{{asset('public/frontend/images/clientsLogo/3.jpg')}}"><img src="{{asset('public/frontend/images/clientsLogo/3.jpg')}}" class="img-responsive"></a>
-                                               <div class="img-overlay">
-                                                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                           <div class="img-wrapper">
-                                               <a href="{{asset('public/frontend/images/clientsLogo/3.jpg')}}"><img src="{{asset('public/frontend/images/clientsLogo/3.jpg')}}" class="img-responsive"></a>
-                                               <div class="img-overlay">
-                                                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                           <div class="img-wrapper">
-                                               <a href="{{asset('public/frontend/images/clientsLogo/3.jpg')}}"><img src="{{asset('public/frontend/images/clientsLogo/3.jpg')}}" class="img-responsive"></a>
-                                               <div class="img-overlay">
-                                                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                           <div class="img-wrapper">
-                                               <a href="{{asset('public/frontend/images/clientsLogo/3.jpg')}}"><img src="{{asset('public/frontend/images/clientsLogo/3.jpg')}}" class="img-responsive"></a>
-                                               <div class="img-overlay">
-                                                   <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                               </div>
-                                           </div>
-                                       </div>
+                                       @endforeach
                                    </div><!-- End row -->
                                </div><!-- End image gallery -->
                        </section>

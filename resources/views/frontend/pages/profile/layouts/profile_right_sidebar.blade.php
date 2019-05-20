@@ -14,121 +14,21 @@
 </div>
 <div class="collage_about_right_list">
     <h2 class="collage_about_right_list_h2" > <i class="fa fa-street-view"></i>NEWS</h2>
+    @foreach($post as $postData)
     <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
+        <a href="{{url($client->user->name.'/'.$postData->slug.'/'.'news-article')}}">
+            @if(isset($postData->image))
+            <img src="{{url('public/frontend/images/uploads/client/post/image/').'/'.$postData->image}}" alt="" />
+                @else
+                <img src="{{url('public/frontend/default/image.jpg')}}" alt="" />
+                @endif
+            <p>
             <b>
                 SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
             </b>
             <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
         </p>
+        </a>
     </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-</div>
-<div class="collage_about_right_list">
-    <h2 class="collage_about_right_list_h2" > <i class="fa fa-street-view"></i>STUDENTS ALSO VISITED</h2>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-</div>
-<div class="collage_about_right_list">
-    <h2 class="collage_about_right_list_h2" > <i class="fa fa-street-view"></i>ADMISSION</h2>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-</div>
-<div class="collage_about_right_list">
-    <h2 class="collage_about_right_list_h2" > <i class="fa fa-street-view"></i>OTHER COLLEGES IN THE SAME GROUP</h2>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
-    <div class="collage_about_right_list_content">
-        <a href="#"><img src="{{asset('public/frontend')}}/images/clientsLogo/3.jpg" alt="" /></a>
-        <p>
-            <b>
-                SC rules out upper age limit for JEE Advanced, Changes in JEE Main Expected
-            </b>
-            <span class="collage_about_right_list"> MARCH 19TH, 2019</span>
-        </p>
-    </div>
+        @endforeach
 </div>

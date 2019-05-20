@@ -1,0 +1,40 @@
+.client_area_right h2{
+    color: #000000;
+    padding: 7px;
+    background: #dddddd;
+}
+.client_courses,.client_news_area{
+    padding: 30px 0;
+    background: #dddddd70;
+}
+.client_left_area{
+    background: #fff;
+
+}
+.client_area_right{
+    background: #fff;
+    padding: 5px;
+}
+h2.client_name{
+    font-size: 12px;
+}
+ .client_area_left_listing{
+     padding-bottom: 10px;
+ }
+.client_area_left_listing h3{
+    color: #fff;
+    padding: 5px 10px;
+    background: #0696d0;
+
+}
+.client_area_left_listing a{
+    padding: 0 15px;
+    color: #fff;
+    float: right;
+}
+h3.client_t_title_le{
+    float: left;
+}
+h3.client_t_title_ri{
+    float: right;
+}

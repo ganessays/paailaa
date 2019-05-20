@@ -82,36 +82,29 @@
 
     <!-- Search  -->
     <div class="container">
-        <section class="search-sec">
-            <form action="#" method="post" novalidate="novalidate">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" placeholder="Enter Pickup City">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" placeholder="Enter Drop City">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <select class="form-control search-slt" id="exampleFormControlSelect1">
-                                    <option>Collage</option>
-                                    <option>School</option>
-                                    <option>Consultancy</option>
-                                    <option>Events</option>
-                                    <option>Example one</option>
-                                    <option>Example one</option>
-                                    <option>Example one</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <button type="button" class="btn btn-danger wrn-btn">Search</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </section>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            <section class="search-sec">
+                   <div class="input-group">
+                       <div class="input-group-btn search-panel">
+                           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                               <span id="search_concept">All</span> <span class="caret"></span>
+                           </button>
+                           <ul class="dropdown-menu" role="menu">
+                               <li><a href="#contains">Colleges</a></li>
+                               <li><a href="#its_equal">Exam</a></li>
+                               <li><a href="#greather_than">News</a></li>
+                           </ul>
+                       </div>
+                       <input type="hidden" name="search_param" value="all" id="search_param">
+                       <input type="text" class="form-control" name="x" placeholder="Search term...">
+                       <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                </span>
+                   </div>
+            </section>
+               </div>
+           </div>
     </div>
     <!-- Search  -->
 
@@ -119,104 +112,55 @@
     <div class="section service">
         <div class="container">
             <div class="row">
-
                 <!-- Start Service Icon 1 -->
                 <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
-                    <div class="service-icon">
-                        <i class="fa fa-leaf icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>High Quality Theme</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-
-                    </div>
+                    <a href="{{url('education')}}">
+                        <div class="service-icon">
+                            <i class="fa fa-leaf icon-large"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Education</h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- End Service Icon 1 -->
 
                 <!-- Start Service Icon 2 -->
                 <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
-                    <div class="service-icon">
-                        <i class="fa fa-desktop icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
+                    <a href="{{url('sports')}}">
+                        <div class="service-icon">
+                            <i class="fa fa-dashboard icon-large"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Sports</h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- End Service Icon 2 -->
 
                 <!-- Start Service Icon 3 -->
                 <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
-                    <div class="service-icon">
-                        <i class="fa fa-eye icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
+                    <a href="{{url('events')}}">
+                        <div class="service-icon">
+                            <i class="fa fa-eye icon-large"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Events</h4>
+                        </div>
+                    </a>
                 </div>
                 <!-- End Service Icon 3 -->
 
                 <!-- Start Service Icon 4 -->
                 <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
                     <div class="service-icon">
-                        <i class="fa fa-code icon-large"></i>
+                        <i class="fa fa-dedent icon-large"></i>
                     </div>
                     <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
+                        <h4>Social Services</h4>
                     </div>
                 </div>
                 <!-- End Service Icon 4 -->
-
-                <!-- Start Service Icon 5 -->
-                <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
-                    <div class="service-icon">
-                        <i class="fa fa-rocket icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
-                </div>
-                <!-- End Service Icon 5 -->
-
-                <!-- Start Service Icon 6 -->
-                <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
-                    <div class="service-icon">
-                        <i class="fa fa-css3 icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
-                </div>
-                <!-- End Service Icon 6 -->
-
-                <!-- Start Service Icon 7 -->
-                <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="07">
-                    <div class="service-icon">
-                        <i class="fa fa-download icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
-                </div>
-                <!-- End Service Icon 7 -->
-
-                <!-- Start Service Icon 8 -->
-                <div class="col-md-3 col-xs-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="08">
-                    <div class="service-icon">
-                        <i class="fa fa-umbrella icon-large"></i>
-                    </div>
-                    <div class="service-content">
-                        <h4>Paaila Any Content</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
-                    </div>
-                </div>
-                <!-- End Service Icon 8 -->
-
             </div>
             <!-- .row -->
         </div>
@@ -235,6 +179,7 @@
             <div class="tab-content" id="tabs">
                 <div class="tab-pane active" id="Collage">
                     <div class="row">
+                        @foreach($faculty as $facultyData)
                         <a href="{{url('list-collage')}}">
                         <div class="col-md-3 col-xs-4 col-sm-6">
                             <div class="collage_category">
@@ -242,169 +187,16 @@
                                     <i class="fa fa-home icon-large"></i>
                                 </div>
                                 <div class="collage-content">
-                                    <h4>MANAGEMENT</h4>
-                                    <p>555 Collage</p>
+                                    <h4>{{$facultyData->name}}</h4>
+                                    @foreach($facultyData->client_faculty as $faculty)
+                                        @php $clients = \App\Client::where('company_nature_id',$faculty->client->company_nature_id)->get();  @endphp
+                                        {{count($clients)}}
+                                        @endforeach
                                 </div>
                             </div>
                         </div>
                         </a>
-
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>ENGINEERING</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>MEDICAL</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>AGRICULTURE</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>ARTS</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>AVIATION</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>COMMERCE</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>DENTAL</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>DESIGN</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>EDUCATION</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>LAW</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>PARAMEDICAL</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>PHARMACY</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>SCIENCE</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-md-3 col-xs-4 col-sm-6">
-                            <div class="collage_category">
-                                <div class="collage-icon">
-                                    <i class="fa fa-rocket icon-large"></i>
-                                </div>
-                                <div class="collage-content">
-                                    <h4>COMPUTER APPLICATIONS</h4>
-                                    <p>555 Collage</p>
-                                </div>
-                            </div>
-                        </div>
-
+                        @endforeach
                     </div>
                 </div>
                 <div class="tab-pane" id="Consultancy">
@@ -684,77 +476,18 @@
                         <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="2">
 
                             <!-- Posts 1 -->
+                            @foreach($news as $newsData)
                             <div class="post-row item">
                                 <div class="left-meta-post">
                                     <div class="post-date"><span class="day">28</span><span class="month">Dec</span></div>
                                     <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                 </div>
-                                <h3 class="post-title"><a href="#">Standard Post With Image</a></h3>
+                                <h3 class="post-title"><a href="{{url('').'/'.$newsData->user->name}}">{{$newsData->title}}</a></h3>
                                 <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+                                    <p>{{str_limit($newsData->detail, 80)}} <a class="read-more" href="#">Read More...</a></p>
                                 </div>
                             </div>
-
-                            <!-- Posts 2 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Link Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 3 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Iframe Video Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 4 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Gallery Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 5 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Standard Post without Image</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 6 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Iframe Audio Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
+                            @endforeach
                         </div>
                     </div>
                     <!-- End Recent Posts Carousel -->
@@ -807,80 +540,24 @@
 
                     <!-- Start Recent Posts Carousel -->
                     <div class="latest-posts">
-                        <h4 class="classic-title"><span>Paaile Events</span></h4>
+                        <h4 class="classic-title"><span>Paailaa Upcoming Events</span></h4>
                         <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="2">
 
                             <!-- Posts 1 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">28</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Standard Post With Image</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
+                            @foreach($event as $events)
+                            <div class="classic-testimonials item">
 
-                            <!-- Posts 2 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Link Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
+                                    <div class="upcoming_events">
+                                        <img src="{{asset('public/frontend/images/uploads/event/').'/'.$events->image}}" alt="">
+                                    </div>
+                                <div class="testimonial-content">
+                                    <h3 class="post-title"><a href="#">{{$events->name}}</a></h3>
+                                    {!! str_limit($events->detail, 136) !!}
+                                        <a class="read-more" href="#">Read More...</a>
 
-                            <!-- Posts 3 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Iframe Video Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
                                 </div>
                             </div>
-
-                            <!-- Posts 4 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Gallery Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 5 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Standard Post without Image</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
-
-                            <!-- Posts 6 -->
-                            <div class="post-row item">
-                                <div class="left-meta-post">
-                                    <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                                    <div class="post-type"><i class="fa fa-picture-o"></i></div>
-                                </div>
-                                <h3 class="post-title"><a href="#">Iframe Audio Post</a></h3>
-                                <div class="post-content">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-                                </div>
-                            </div>
+                                @endforeach
 
                         </div>
                     </div>
@@ -896,26 +573,18 @@
                     <!-- Start Testimonials Carousel -->
                     <div class="custom-carousel show-one-slide touch-carousel" data-appeared-items="1">
                         <!-- Testimonial 1 -->
+                        @foreach($pastEvent as $pastEvents)
                         <div class="classic-testimonials item">
-                            <div class="testimonial-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="upcoming_events">
+                                <img src="{{asset('public/frontend/images/uploads/event/').'/'.$pastEvents->image}}" alt="">
                             </div>
-                            <div class="testimonial-author"><span>John Doe</span> - Customer</div>
-                        </div>
-                        <!-- Testimonial 2 -->
-                        <div class="classic-testimonials item">
                             <div class="testimonial-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <b>{{$pastEvents->name}}</b>
+                               {!! str_limit($pastEvents->detail, 135) !!}
                             </div>
-                            <div class="testimonial-author"><span>John Doe</span> - Customer</div>
                         </div>
-                        <!-- Testimonial 3 -->
-                        <div class="classic-testimonials item">
-                            <div class="testimonial-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="testimonial-author"><span>John Doe</span> - Customer</div>
-                        </div>
+                        @endforeach
+
                     </div>
                     <!-- End Testimonials Carousel -->
 
@@ -935,221 +604,40 @@
                    <p>Paailaa.com is an extensive search engine for the students, parents,
 and education industry players who are seeking information</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
+                @foreach($TopCollege as $college)
+                <div class="col-md-3" title="{{$college->company_name}}">
+                    <a href="{{url('').'/'.$ClientOverView = $college->slug}}">
+                        <div class="twPc-div">
+                            <a class="twPc-bg twPc-block" style="background-image: url('{{url('public/frontend/images/uploads/college/feature')}}/{{$college->featured_image}}'); background-size: cover"></a>
+                            <div class="twPc-button">
+                                <div class="top_feature_collage_view">
+                                    <p>
+                                        <i class="fa fa-eye"></i>3232
+                                    </p>
+                                </div>
+                            </div>
+                            <a title="Logo of {{$college->company_name}}" href="#" class="twPc-avatarLink">
+                                @if(isset($college->logo))
+                                    <img alt="{{$college->company_name}}" src="{{url('public/frontend/images/uploads/college/logo')}}/{{$college->logo}}" class="twPc-avatarImg">
+                                    @else
+                                    <img src="{{url('public/frontend/default/image.jpg')}}" alt="" />
+                                    @endif
+                            </a>
+                            <div class="twPc-divUser">
+                                <div class="collage_name">
+                                    <h2> <a href="{{url('').'/'.$college->user->name}}">{{$college->company_name}}</a></h2>
+                                </div>
+                                <div class="front_list_collage_lo">
+                                    <a href="{{$college->address}}">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span> {{$college->address}}, {{$college->district->name}}</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Global College of Management </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Mid Baneshwor, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>Kathmandu, Nepal </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Global College of Management </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Mid Baneshwor, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>Kathmandu, Nepal </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Islington College </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span> Kamalpokhari, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
+                @endforeach
 
             </div>
         </div>
@@ -1165,113 +653,34 @@ and education industry players who are seeking information</p>
                     <p>Paailaa.com is an extensive search engine for the students, parents,
 and education industry players who are seeking information</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
+                @foreach($TopConsultancy as $college)
+                    <div class="col-md-3">
+                        <div class="twPc-div">
+                            <a class="twPc-bg twPc-block" style="background-image: url('{{url('public/frontend/images/uploads/college/feature')}}/{{$college->featured_image}}');"></a>
+                            <div class="twPc-button">
+                                <div class="top_feature_collage_view">
+                                    <p>
+                                        <i class="fa fa-eye"></i>3232
+                                    </p>
+                                </div>
+                            </div>
+                            <a title="{{$college->company_name}}" href="#" class="twPc-avatarLink">
+                                <img alt="{{$college->company_name}}" src="{{url('public/frontend/images/uploads/college/logo')}}/{{$college->logo}}" class="twPc-avatarImg">
+                            </a>
+                            <div class="twPc-divUser">
+                                <div class="collage_name">
+                                    <h2> <a href="{{url('').'/'.$college->user->name}}">{{$college->company_name}}</a></h2>
+                                </div>
+                                <div class="front_list_collage_lo">
+                                    <a href="#">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span> {{$college->address}}, {{$college->district->name}}</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">The Next Education Consultancy</a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>Dillibazar, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">KIEC </a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>Dillibazar, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Texas International College</a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>Kathmandu, Nepal </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
-
-                <div class="col-md-3">
-                    <div class="twPc-div">
-                        <a class="twPc-bg twPc-block" style="background-image: url('{{asset('public/frontend/images/topCollage/topcollage.jpg')}}');"></a>
-                        <div class="twPc-button">
-                            <div class="top_feature_collage_view">
-                                <p>
-                                    <i class="fa fa-eye"></i>3232
-                                </p>
-                            </div>
-                        </div>
-                        <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend/images/topCollage/logo.jpg')}}" class="twPc-avatarImg">
-                        </a>
-                        <div class="twPc-divUser">
-                            <div class="collage_name">
-                                <h2> <a href="{{url('collage-profile')}}">Bradford Education Consultancy</a></h2>
-                            </div>
-                            <div class="front_list_collage_lo">
-                                <a href="#">
-                                    <i class="fa fa-map-marker"></i>
-                                    <span>New Baneshwor, Kathmandu, Nepal</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- col md 3 end  -->
+                    </div><!-- col md 3 end  -->
+                @endforeach
             </div>
         </div>
     </div>
@@ -1346,5 +755,4 @@ and education industry players who are seeking information</p>
         <!-- .container -->
     </div>
     <!-- End Client/Partner Section -->
-
 @endsection

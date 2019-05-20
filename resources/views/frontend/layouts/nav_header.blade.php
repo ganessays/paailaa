@@ -33,27 +33,6 @@
                                 <li>
                                     <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
                                 </li>
-                                <li>
-                                    <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
-                                </li>
-                                <li>
-                                    <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-                                </li>
-                                <li>
-                                    <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
-                                </li>
-                                <li>
-                                    <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
-                                </li>
                             </ul>
                             <!-- End Social Links -->
                         </div>
@@ -77,7 +56,7 @@
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
                         <a class="navbar-brand" href="{{url('')}}">
-                            <img alt="" src="{{asset('public/frontend')}}/images/margo.png" style="max-width: 120px;margin-top: -15px;">
+                            <img alt="" src="{{asset('public/frontend/images/logo/logo.png')}}" style="max-width: 120px;margin-top: -15px;">
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -96,129 +75,104 @@
                             <li>
                                 <a class="@if(request()->segment('1') =='') active @endif" href="{{url('')}}">Home</a>
                                 {{--<ul class="dropdown">--}}
-                                    {{--<li><a class="" href="index-01.html">Education</a>--}}
-                                    {{--</li>--}}
-                                    {{--<li><a href="index-02.html">Any Menu</a>--}}
-                                    {{--</li>--}}
-                                    {{--<li><a href="index-03.html">Any Menu</a>--}}
-                                    {{--</li>--}}
+                                {{--<li><a class="" href="index-01.html">Education</a>--}}
+                                {{--</li>--}}
+                                {{--<li><a href="index-02.html">Any Menu</a>--}}
+                                {{--</li>--}}
+                                {{--<li><a href="index-03.html">Any Menu</a>--}}
+                                {{--</li>--}}
                                 {{--</ul>--}}
                             </li>
                             <li>
-                                <a href="about.html">Sports</a>
-                                <ul class="dropdown">
-                                    <li><a href="right-sidebar.html">Paailaa Any Menu</a>
-                                    </li>
-                                    <li><a href="left-sidebar.html">Paaila Any Menu</a>
-                                    </li>
-                                    <li><a href="404.html">404 Page</a>
-                                    </li>
-                                </ul>
+                                <a href="about.html">Education</a>
+                                {{--<ul class="dropdown">--}}
+                                    {{--<li><a href="right-sidebar.html">Paailaa Any Menu</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li><a href="left-sidebar.html">Paaila Any Menu</a>--}}
+                                    {{--</li>--}}
+                                    {{--<li><a href="404.html">404 Page</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
                             </li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Events</a></li>
                             <li><a href="#">Social Services</a></li>
-                            <li><a href="#">Team Member</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Download</a></li>
+                            <li><a href="{{url('news')}}">News</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="{{url('contact-us')}}">Contact</a></li>
-                            <li><a href="{{url('login')}}" class="@if(request()->segment('1') =='login') active @endif">Login</a></li>
+
+                            @if(\Illuminate\Support\Facades\Auth::check())
+                                <li>
+                                    <a href="about.html">Profile</a>
+                                    <ul class="dropdown">
+                                        @if(\Illuminate\Support\Facades\Auth::check())
+                                            @if(\Illuminate\Support\Facades\Auth::user()->role_id== 4)
+                                        <li><a href="{{url('client/')}}">Dashboard</a></li>
+                                        <li><a href="{{url('client/profile')}}">Profile Manager</a></li>
+                                        <li><a href="{{url('client/courses-fees')}}">Courses & Fees</a></li>
+                                        <li><a href="{{url('client/faculty')}}">Faculty</a></li>
+                                        <li><a href="{{url('client/facilities')}}">Facilities</a></li>
+                                        <li><a href="{{url('client/galleries')}}">Galleries</a></li>
+                                        <li><a href="{{url('client/create-post')}}">News & Article</a></li>
+                                            @endif
+                                            @endif
+
+                                        <li><a href="{{url('logout')}}">Logout</a></li>
+                                    </ul>
+                                </li>
+                            @else
+                                <li><a href="{{url('login')}}">Login</a></li>
+                            @endif
                         </ul>
                         <!-- End Navigation List -->
                     </div>
+                    {{--Client Area--}}
+                    {{--@if(\Illuminate\Support\Facades\Auth::check())--}}
+                        {{--@if(\Illuminate\Support\Facades\Auth::user()->role_id== 4)--}}
+
+                            {{--<div class="navbar-collapse collapse" style="background: #0696d0;">--}}
+                                {{--<!-- Start Navigation List -->--}}
+                                {{--<ul class="nav navbar-nav navbar-right">--}}
+                                    {{--<li><a href="{{url('client/')}}">Dashboard</a></li>--}}
+                                    {{--<li><a href="{{url('client/profile')}}">Profile Manager</a></li>--}}
+                                    {{--<li><a href="{{url('client/courses-fees')}}">Courses & Fees</a></li>--}}
+                                    {{--<li><a href="{{url('client/faculty')}}">Faculty</a></li>--}}
+                                    {{--<li><a href="{{url('client/facilities')}}">Facilities</a></li>--}}
+                                    {{--<li><a href="{{url('client/galleries')}}">Galleries</a></li>--}}
+                                    {{--<li><a href="{{url('client/create-post')}}">News & Article</a></li>--}}
+                                {{--</ul>--}}
+                                {{--<!-- End Navigation List -->--}}
+                            {{--</div>--}}
+                        {{--@endif--}}
+                    {{--@endif--}}
+                    {{--client Area end--}}
                 </div>
 
                 <!-- Mobile Menu Start -->
                 <ul class="wpb-mobile-menu">
                     <li>
                         <a class="active" href="index.html">Home</a>
-                        <ul class="dropdown">
-                            <li><a class="active" href="index-01.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-02.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-03.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-04.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-05.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-06.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-07.html">Any Menu</a>
-                            </li>
-                            <li><a href="index-08.html">HSome Version 8</a>
-                            </li>
-                            <li><a href="index-09.html">Any Menu</a>
-                            </li>
-                        </ul>
+                        {{--<ul class="dropdown">--}}
+                            {{--<li><a href="index-08.html">HSome Version 8</a>--}}
+                            {{--</li>--}}
+                            {{--<li><a href="index-09.html">Any Menu</a>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
                     </li>
-                    <li>
-                        <a href="about.html">Pages</a>
-                        <ul class="dropdown">
-                            <li><a href="about.html">About</a>
-                            </li>
-                            <li><a href="services.html">Services</a>
-                            </li>
-                            <li><a href="right-sidebar.html">Right Sidebar</a>
-                            </li>
-                            <li><a href="left-sidebar.html">Left Sidebar</a>
-                            </li>
-                            <li><a href="404.html">404 Page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Shortcodes</a>
-                        <ul class="dropdown">
-                            <li><a href="tabs.html">Tabs</a>
-                            </li>
-                            <li><a href="buttons.html">Buttons</a>
-                            </li>
-                            <li><a href="forms.html">Forms</a>
-                            </li>
-                            <li><a href="action-box.html">Action Box</a>
-                            </li>
-                            <li><a href="testimonials.html">Testimonials</a>
-                            </li>
-                            <li><a href="latest-posts.html">Latest Posts</a>
-                            </li>
-                            <li><a href="latest-projects.html">Latest Projects</a>
-                            </li>
-                            <li><a href="pricing.html">Pricing Tables</a>
-                            </li>
-                            <li><a href="animated-graphs.html">Animated Graphs</a>
-                            </li>
-                            <li><a href="accordion-toggles.html">Accordion & Toggles</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="portfolio-3.html">Portfolio</a>
-                        <ul class="dropdown">
-                            <li><a href="portfolio-2.html">2 Columns</a>
-                            </li>
-                            <li><a href="portfolio-3.html">3 Columns</a>
-                            </li>
-                            <li><a href="portfolio-4.html">4 Columns</a>
-                            </li>
-                            <li><a href="single-project.html">Single Project</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                        <ul class="dropdown">
-                            <li><a href="blog.html">Blog - right Sidebar</a>
-                            </li>
-                            <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a>
-                            </li>
-                            <li><a href="single-post.html">Blog Single Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Socila Service</a></li>
+                    <li><a href="#">Team Member</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    @if(\Illuminate\Support\Facades\Auth::check())
+                        <li><a href="{{url('logout')}}">Logout</a></li>
+                    @else
+                        <li><a href="{{url('login')}}">Login</a></li>
+                    @endif
                 </ul>
                 <!-- Mobile Menu End -->
 
@@ -227,4 +181,4 @@
 
         </header>
         <!-- End Header Section -->
-    @endsection
+@endsection

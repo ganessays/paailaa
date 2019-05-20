@@ -7,12 +7,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8">
+                    @foreach($courses as $course)
                    <div class="courses_fee_profile">
-                       <h2>BACHELOR OF MEDICINE, BACHELOR OF SURGERY (MBBS)</h2>
-                       <a href=""><i class="fa fa-clock"></i> 5 YEARS 6 MONTHS </a>
+                       <h2>@if(isset($course->course->name)){{$course->course->name}} @endif</h2>
+                       <a href=""><i class="fa fa-clock"></i>{{$course->duration}} </a>
+                       <a href=""><i class="fa fa-book"></i> Courses Fees Rs.{{$course->course_fee}}</a>
                        <a href=""><i class="fa fa-book"></i> FULL TIME</a>
-                       <a href=""> <i class="fa fa-database"></i> 100 SEATS PER COURSE</a>
+                       <a href=""> <i class="fa fa-database"></i> {!! $course->detail !!}</a>
                    </div>
+                        @endforeach
                 </div>
                 <div class="col-md-4">
                    <div class="profile_righlt_all_li">

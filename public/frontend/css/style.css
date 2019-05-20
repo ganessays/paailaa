@@ -430,7 +430,7 @@ header{
 }
 .navbar-top.affix .navbar-nav > li > a,
 .navbar-top.affix .navbar-nav > li > a:focus {
-	padding: 20px 15px;
+	/*padding: 20px 15px;*/
 }
 .navbar-top.affix .search-side{
 	margin-top: -7px;
@@ -606,7 +606,7 @@ ul.social-list li:last-child a i {
 }
 .navbar {
 	margin-bottom: 0;
-	background: #00007b;
+	background: #0696d0;
 	border: none;
 	border-radius: 0;
     -webkit-border-radius: 0;
@@ -645,14 +645,13 @@ ul.social-list li:last-child a i {
 	color: #fff;
 	display: block;
     font-size: 14px;
-	font-weight: 300;
-    padding: 28px 15px 28px 15px;
+    /*padding: 28px 15px 28px 15px;*/
 	overflow: hidden;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
@@ -746,7 +745,7 @@ ul.social-list li:last-child a i {
 .search-side {
 	position: relative;
 	float: right;
-	top: 19px;
+	top: 10px;
 	right: -15px;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -5859,5 +5858,10 @@ a.Apply_now_l_b {
 }
 .front_list_collage_lo {
     margin-top: 22px;
+}
+.collage_ne_ar_list img {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
 }
 /*list collage end*/

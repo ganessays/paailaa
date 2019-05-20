@@ -4,18 +4,14 @@
             <div class="pn-ProductNav_Wrapper">
                 <nav id="pnProductNav" class="pn-ProductNav">
                     <div id="pnProductNavContents" class="pn-ProductNav_Contents">
-                        <a href="{{url('info')}}" class="pn-ProductNav_Link" aria-selected="true">Info</a>
-                        <a href="{{url('course-fee')}}" class="pn-ProductNav_Link">Course & Fees</a>
-                        <a href="{{url('collage-admission')}}" class="pn-ProductNav_Link">Admission</a>
-                        <a href="{{url('results')}}" class="pn-ProductNav_Link">Result</a>
-                        <a href="{{url('review')}}" class="pn-ProductNav_Link">Review</a>
-                        <a href="{{url('department')}}" class="pn-ProductNav_Link">Department</a>
-                        <a href="{{url('placement')}}" class="pn-ProductNav_Link">Placement</a>
-                        <a href="{{url('collage-gallery')}}" class="pn-ProductNav_Link">Gallery</a>
-                        <a href="{{url('scholarship')}}" class="pn-ProductNav_Link">Scholarship</a>
-                        <a href="{{url('faculty')}}" class="pn-ProductNav_Link">Faculty</a>
-                        <a href="{{url('news-article')}}" class="pn-ProductNav_Link">News & Article</a>
-                        <a href="{{url('hostel')}}" class="pn-ProductNav_Link">Hostel</a>
+                        <a href="{{url($client->user->name.'/'.'info')}}" class="pn-ProductNav_Link" aria-selected="true">Info</a>
+                        <a href="{{url($client->user->name.'/'.'course-fee')}}" class="pn-ProductNav_Link">Course & Fees</a>
+                        <a href="{{url($client->user->name.'/'.'results')}}" class="pn-ProductNav_Link">Result</a>
+                        <a href="{{url($client->user->name.'/'.'review')}}" class="pn-ProductNav_Link">Review</a>
+                        <a href="{{url($client->user->name.'/'.'gallery')}}" class="pn-ProductNav_Link">Gallery</a>
+                        <a href="{{url($client->user->name.'/'.'faculty')}}" class="pn-ProductNav_Link">Faculty</a>
+                        <a href="{{url($client->user->name.'/'.'facility')}}" class="pn-ProductNav_Link">Facility</a>
+                        <a href="{{url($client->user->name.'/'.'news-article')}}" class="pn-ProductNav_Link">News & Article</a>
                     </div>
                     <span class="pn-ProductNav_Indicator"></span>
                 </nav>
@@ -29,7 +25,7 @@
         </div>
     </div>
     <div class="collage_profile_details">
-        <a class=" twPc-block" style="background-image: url('{{asset('public/frontend')}}/images/topCollage/topcollage.jpg'); height: 200px"></a>
+        <a class=" twPc-block" style="background-image: url('{{url('public/frontend/images/uploads/college/banner')}}/{{$client->banner}}'); height: 200px"></a>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -42,16 +38,16 @@
                             </div>
                         </div>
                         <a title="Mert S. Kaplan" href="#" class="twPc-avatarLink">
-                            <img alt="Mert S. Kaplan" src="{{asset('public/frontend')}}/images/topCollage/logo.jpg" class="twPc-avatarImg">
+                            <img alt="Mert S. Kaplan" src="{{url('public/frontend/images/uploads/college/logo')}}/{{$client->logo}}" class="twPc-avatarImg">
                         </a>
                         <div class="twPc-divUser">
                             <div class="twPc-divName">
-                                <h1 class="collage_p_t"><a href="{{url('collage-profile')}}">MADRAS CHRISTIAN COLLEGE - [MCC], CHENNAI</a></h1>
+                                <h1 class="collage_p_t"><a href="{{url('collage-profile')}}">{{$client->company_name}}</a></h1>
                             </div>
                             <span>
                 <a href="#">
                   <i class="fa fa-map-marker"></i>
-                     <span>CHENNAI, TAMIL NADU  UGC, NAAC-A |  ESTD 1837  UNIVERSITY OF MADRAS, CHENNAI  PRIVATE INSTITUTE (AUTONOMOUS)</span>
+                     <span>{{$client->address}}, {{$client->district->name}}</span>
                 </a>
               </span>
                         </div>

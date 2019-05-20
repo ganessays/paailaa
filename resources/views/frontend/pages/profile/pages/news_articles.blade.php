@@ -11,42 +11,21 @@
                        <h2>EXAM NEWS AND ARTICLES</h2>
                        <hr>
                        <div class="row">
+                           @foreach($post as $postData)
                            <div class="col-md-4">
+                               <a href="#">
                                <div class="collage_ne_ar_list">
-                                   <img src="{{url('public/frontend/images/uploads/newsarticle/topcollage.jpg')}}" alt="">
-                                   <span>Date {{date('Y,m,d')}}</span> <span class="pull-right"><i class="fa fa-eye"></i></span>
-                                       <p><a href="#">
-                                           National Law School (NLSIU) Bangalore M.Phil, Ph.D and LL.D Admissions 2019: Courses, Placement, Fees
-                                       </a></p>
+                                   @if(isset($postData->image))
+                                       <img src="{{url('public/frontend/images/uploads/client/post/image/').'/'.$postData->image}}" alt="" />
+                                   @else
+                                       <img src="{{url('public/frontend/default/image.jpg')}}" alt=""/>
+                                   @endif
+                                       <span>Date {{$postData->start_at}}</span> <span class="pull-right"><i class="fa fa-eye"></i></span>
+                                       <p><b>{{$postData->title}}</b></p>
                                </div>
+                               </a>
                            </div>
-                           <div class="col-md-4">
-                               <div class="collage_ne_ar_list">
-                                   <img src="{{url('public/frontend/images/uploads/newsarticle/topcollage.jpg')}}" alt="">
-                                   <span>Date {{date('Y,m,d')}}</span> <span class="pull-right"><i class="fa fa-eye"></i></span>
-                                   <p><a href="#">
-                                           National Law School (NLSIU) Bangalore M.Phil, Ph.D and LL.D Admissions 2019: Courses, Placement, Fees
-                                       </a></p>
-                               </div>
-                           </div>
-                           <div class="col-md-4">
-                               <div class="collage_ne_ar_list">
-                                   <img src="{{url('public/frontend/images/uploads/newsarticle/topcollage.jpg')}}" alt="">
-                                   <span>Date {{date('Y,m,d')}}</span> <span class="pull-right"><i class="fa fa-eye"></i></span>
-                                   <p><a href="#">
-                                           National Law School (NLSIU) Bangalore M.Phil, Ph.D and LL.D Admissions 2019: Courses, Placement, Fees
-                                       </a></p>
-                               </div>
-                           </div>
-                           <div class="col-md-4">
-                               <div class="collage_ne_ar_list">
-                                   <img src="{{url('public/frontend/images/uploads/newsarticle/topcollage.jpg')}}" alt="">
-                                   <span>Date {{date('Y,m,d')}}</span> <span class="pull-right"><i class="fa fa-eye"></i></span>
-                                   <p><a href="#">
-                                           National Law School (NLSIU) Bangalore M.Phil, Ph.D and LL.D Admissions 2019: Courses, Placement, Fees
-                                       </a></p>
-                               </div>
-                           </div>
+                               @endforeach
                        </div>
                    </div>
                 </div>

@@ -1,4 +1,4 @@
-@extends('backend.candidate.layouts.master')
+@extends('backend.superadmin.layouts.master')
 
 @section('content')
     @yield('body')

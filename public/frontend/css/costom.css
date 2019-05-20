@@ -1,6 +1,6 @@
 /*search box css start here*/
 .search-sec{
-    padding: 2rem;
+    padding: 1rem;
 }
 .search-slt{
     display: block;
@@ -24,15 +24,17 @@
 }
 @media (min-width: 992px){
     .search-sec{
+        border-radius: 4px;
         position: relative;
         top: -214px;
-        background: rgba(26, 70, 104, 0.51);
+        background: #006f9c;
     }
 }
 
 @media (max-width: 992px){
     .search-sec{
-        background: #1A4668;
+        padding-bottom: 64px;
+        margin-top: -99px;
     }
 }
 
@@ -461,4 +463,38 @@ ul.nav.nav-tabs {
     font-weight: bold;
     padding-left: 40px;
 }
+.collage_news_article_list{
+    text-align: justify;
+}
 /*Login*/
+
+.upcoming_events{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.upcoming_events img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.list_collage_add h2{
+    padding: 20px 3px;
+}
+.events_front{
+    padding: 60px 0;
+}
+.f_e_content{
+    background: #f3f2f2;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.events_front img{
+    width: 100%;
+}
+h3.events_h3{
+    color: #fff;
+    background: #0a9fd8;
+    padding: 5px 10px;
+}

@@ -20,7 +20,7 @@
     <!-- Basic -->
    @if(isset($title))
         <title>{!! $title !!}</title>
-    <title>medicalvisaservices</title>
+    <title>Paailaa</title>
 @endif
     <!-- Define Charset -->
     <meta charset="utf-8">
@@ -66,7 +66,11 @@
     <script type="text/javascript" src="{{asset('public/frontend')}}/js/jquery.slicknav.js"></script>
     <script type="text/javascript" src="{{asset('public/frontend')}}/js/profile.js"></script>
     <link rel="stylesheet" href="{{asset('public/frontend')}}/css/costom.css">
+    <link rel="stylesheet" href="{{asset('public/frontend/css/client.css')}}">
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    {{--<script src='//static.codepen.io/assets/editor/live/console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js'></script><script src='//static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js'></script>--}}
+
 </head>
     @endsection

@@ -22,6 +22,10 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class,'role_id');
     }
 
+    public function client(){
+        return $this->hasOne(Client::class,'user_id');
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *

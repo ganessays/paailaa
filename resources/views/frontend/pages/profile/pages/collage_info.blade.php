@@ -11,23 +11,7 @@
                         <h2>About Collage</h2>
                         <hr>
 
-                           <p>
-                            Updated On - February 12th 2019 by ANAMIKA MAHAJAN
-                        </p>
-                            <p>
-                                Amity Global Business School (AGBS) Kochi is one of the well-known B-Schools in South India. The institute has directed its student’s energies to the holistic development of the individual. The Amity’s Faculties consist of professionals from the industry having expertise in respective fields having a management qualification.
-                            </p>
-
-                            <p>
-                                Amity Kochi offers to students a splendid environment in which they can flourish. Amity ensures that their graduating students are not just work-efficient but also they are made socially conscious by engaging them in activities and connecting with less privileged stakeholders of the community.
-                            </p>
-
-                            <p>
-                                Read more: Amity Kochi Admissions
-                            </p>
-                        <p>
-                            Why Amity?
-                        </p>
+                     {!! $client->company_profile !!}
                     </div>
                 </div>
                 <div class="col-md-4">

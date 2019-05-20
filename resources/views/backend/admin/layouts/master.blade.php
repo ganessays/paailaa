@@ -1,6 +1,6 @@
-@include('backend.candidate.layouts.header')
-@include('backend.candidate.layouts.footer')
-@include('backend.candidate.layouts.aside')
+@include('backend.admin.layouts.header')
+@include('backend.admin.layouts.aside')
+@include('backend.admin.layouts.footer')
 
 @yield('header')
 
